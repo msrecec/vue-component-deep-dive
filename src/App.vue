@@ -1,6 +1,7 @@
 <template>
   <div>
     <the-header></the-header>
+    <!-- <TheHeader /> -->
     <badge-list></badge-list>
     <user-info
       :full-name="activeUser.name"
@@ -17,9 +18,9 @@ import UserInfo from './components/UserInfo.vue';
 
 export default {
   components: {
-    TheHeader, // Same as - TheHeader: TheHeader - in es6
+    TheHeader,
     BadgeList,
-    UserInfo,
+    UserInfo
   },
   data() {
     return {
